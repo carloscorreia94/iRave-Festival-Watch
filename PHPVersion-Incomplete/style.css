@@ -1,0 +1,289 @@
+/* Estilo CSS */
+body
+{
+	background: url('assets/background.jpg') no-repeat;
+	background-size: auto
+}
+
+div#status_bar {
+
+	color: #fff;
+	height: 15px;
+	width: 101px;
+	border: 1px solid #000;
+	background-color: black;
+	font-family: "arial";
+	font-size: 89%;
+
+}
+
+a {
+      text-decoration:none;
+   }
+
+div#watch_screen {
+	position: absolute;
+	left: 903px;
+	top: 354px;
+	background-color: #fff;
+	width: 1.07in;
+	height: 1.06in;
+}
+
+div#top_left {
+	position: relative;
+	top: 4px;
+	left: 7px;
+	width: 43.5px;
+	height: 43.5px;
+}
+
+div#top_right {
+	position: relative;
+	top: -39px;
+	left: 55px;
+	width: 43.5px;
+	height: 43.5px;
+}
+
+div#bottom_left {
+	position: relative;
+	top: -44px;
+	left: 8px;
+	width: 43.5px;
+	height: 43.5px;
+}
+
+div#bottom_right {
+	position: relative;
+	top: -88px;
+	left: 55px;
+
+	width: 43.5px;
+	height: 43.5px;
+}
+
+div#container {
+	color: #000;
+	height: 87px;
+	width: 103px;
+	font-size: x-small;
+
+}
+
+div#container_index {
+	color: #000;
+	height: 87px;
+	width: 103px;
+	font-size: x-small;
+
+}
+
+div#content_payments_do {
+	padding-top: 65px;
+	font-size: smaller;
+	text-align: center;
+}
+
+div#gO_payments {
+  border: 2px solid #454444;
+  color: #000;
+  width: 99px;
+  height: 28.5px;
+  text-align: center;
+  padding-top: 10px;
+  line-height: 11px;
+}
+
+div#gO_security{
+  border: 2px solid #454444;
+  color: #000;
+  width: 99px;
+  height: 28.5px;
+  text-align: center;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+
+
+div#gO_historico {
+	border: 2px solid #454444;
+	color: #000;
+	width: 99px;
+	height: 38.5px;
+	text-align: center;
+	line-height: 35px;
+
+}
+
+div#content_confirmation_pay {
+	padding-top: 5px;
+	text-align: center;
+}
+
+
+
+
+#check_sign {
+  margin-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30px;
+  align-items: center;
+}
+
+#spinner {
+	top: 22px;
+	position: absolute;
+	left: 30px;
+	height: 40px;
+	width: 40px;
+	text-indent: 125px;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-mask-image: url(assets/spinner_small.png);
+	background-color: #000;
+	-webkit-animation-name: spinnerRotate;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spinnerRotate {
+	from {
+		-webkit-transform:rotate(0deg);
+	}
+	to {
+		-webkit-transform:rotate(360deg);
+	}
+}
+
+div#hard_btns {
+	position: absolute;
+	left: 903px;
+	top: 456px;
+	width: 103px;
+	height: 21px;
+	color: #fff;
+	padding-left: 70px;
+}
+div#home_btn{
+	position: relative;
+	left: -28px;
+	top: -17px;
+	width: 18px;
+	height: 19px;
+	background-image: url('assets/btn/home_button.png');
+
+}
+
+div#definitions_btn {
+	position: relative;
+	left: -63px;
+	top: 1px;
+	width: 21px;
+	height: 20px;
+	background-image: url('assets/btn/gear_button.png');
+
+}
+div#back_btn {
+	position: relative;
+	top: -41px;
+	left: 2px;
+	background-image: url('assets/btn/backB.png');
+	width: 25px;
+	height: 20px;
+}
+
+table#historyTable {
+  width: 100%;
+  /*height: 20px;*/
+  border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+span#price {
+	color:green;
+}
+
+span#insuf {
+	color:red;
+}
+
+div#clock {
+float: right;
+}
+
+div#money {
+float: left;
+}
+
+///////////  BOLA CHAMADA
+
+
+
+2:2;//dot margin factor
+0000:0000;//start color
+#111:#111;
+
+html{
+	background:#111;
+	overflow:hidden;
+}	
+
+//posição
+#c{
+	position: absolute;
+	top:50%;
+	left:50%;	
+	margin-left: -((8 - 1)*(20 + 20*2))/2 - (20/2);
+}
+
+//Controlo das ondas
+@mixin shadow(#111,$s,$sm,$c){
+	box-shadow:
+		0 0 2px 8px $c,
+		0 0 #111 $s #111,
+		0 0 #111 ($s + $sm) $c;
+}
+
+.s{
+	width: 20;
+	height: 20;
+	border-radius: 50%;
+	cursor:pointer;
+	float: left;
+  @include transition(all .2s);
+	&:nth-child(n+2){
+		margin-left: 20*2;
+	}
+}	
+	
+@for $i from 0 to 8 {
+	$c:hsl(0000+(10*$i),100%,55%);
+  $c2:hsl((6*$i),100%,55%);
+	
+	.s:nth-child(#{$i+1}){			
+		background: lighten($c,5%);	
+		@include animation(r+$i 2s ($i/4)+s ease-out  infinite);		 &:hover{
+      background: lighten($c2,5%);      
+      @include animation(r2+$i .5s .4s  ease-out  infinite);
+    }
+	}
+	@include keyframes(r+$i) {
+    0%{@include shadow(0px,0px,0px,rgba($c,0));}
+		10%{@include shadow(12px,10px,4px,$c);}
+		100%{@include shadow(0px,40px,0px,rgba($c,0));}
+	}
+  @include keyframes(r2+$i) {
+		from{@include shadow(12px,10px,4px,$c2);}
+		to{@include shadow(4px,40px,1px,rgba($c2,0));}
+	}
+}
+
+//////////////////////////////////
