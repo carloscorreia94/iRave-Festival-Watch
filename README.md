@@ -5,9 +5,10 @@ Project structure consists in a server-side approach, using SQL database for per
 
 Is incompleted and was discontinued because the Course Rules only alowed me to use HTML+JS.
 
-Complete Version in HTML5+JS to be added soon.
-
 
 **HTML5-JS Version**
 
-To be added soon.
+Up at 02/05/15
+
+Consult the user Manual here: 
+[User Manual](https://github.com/carloscorreia94/iRave-Festival-Watch/blob/master/system_desc.pdf)
