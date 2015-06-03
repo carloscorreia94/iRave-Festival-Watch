@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="code.js" type="text/javascript"></script> 
+<script type="text/javascript">
+    printDynamicItems('config_initial');
+</script>
+<link rel="stylesheet" href="style.css">
+
+<title>Interfaces Pessoa Máquina - iRave</title>
+
+</head>
+
+<body id="config">
+	<div id="config_screen">
+		<h1>Configure o iRave do Festivaleiro pela Primeira Vez.</h1>
+		<hr/>
+		<form name="config_form" action="help.html" onsubmit="return initialConfigForm()">
+		<div id="config_left"> 
+			<h2>Perfil</h2>			
+		<ul>
+		<table class="start_config">
+			<tbody>
+				<tr>
+					<td><li><b>Nome</b></li></td>
+					<td><input type="text" name="nome" id="nome"></td>
+				</tr>
+				<tr>
+					<td><li><b>Idade</b></li></td>
+					<td><input type="text" name="idade" id="idade"></td>
+				</tr>
+				<tr>
+					<td><li><b>Telemóvel</b></li></td>
+					<td><input type="text" name="telemovel" id="telemovel"></td>
+				</tr>
+			</tbody>
+		</table> 
+		</ul> 
+			<h2>Personalização</h2>
+			<table class="start_config">
+			<tbody>
+				<tr>
+					<td><li><b>Esquema de cores:</b></li></td>
+					<td><select name="type" id="scheme" onchange="showScheme(this.value);">
+  						<option value="white" selected>White</option>
+						<option value="black">Black</option>
+						<option value="blue">Blue</option>
+					</select></td>
+				</tr>
+			</tbody>
+		</table> 
+		<div id="white"><hr/><b>Fundo do ecrã:</b> Branco <br/> <b>Cor do texto:</b> Preto <br/> <b>Cor dos ícones:</b> Laranja <br/> <b> Cor do Status bar(barra do topo):</b> Preto </div>
+		<div id="black" style="display:none;"><hr/><b>Fundo do ecrã:</b> Preto <br/> <b>Cor do texto:</b> Branco <br/> <b>Cor dos ícones:</b> Laranja <br/> <b> Cor do Status bar(barra do topo):</b> Cinzento</div>
+		<div id="blue" style="display:none;"><hr/><b>Fundo do ecrã:</b> Cinzento <br/> <b>Cor do texto:</b> Preto <br/> <b>Cor dos ícones:</b> Laranja <br/> <b> Cor do Status bar(barra do topo):</b> Azul Claro</div>
+		</div>
+		<div id="config_right">
+			<h2>Pagamentos</h2>
+			Importância Recebida (10€ Min): <input type="text" name="money" maxlength="4" size="4"> €
+
+			<h2>Radar <input type="checkbox" name="check_radar" id="check_radar"></h2>
+			(Nomes atribuidos aos objectos)
+				<ul>
+				<li><p><b>Item #1</b>&nbsp;&nbsp;<input type="text" name="item1" id="item1"></p></li>
+				<li><p><b>Item #2</b>&nbsp;&nbsp;<input type="text" name="item2" id="item2"></p></li>
+				<li><p><b>Item #3</b>&nbsp;&nbsp;<input type="text" name="item3" id="item3"></p></li>
+				</ul>
+					<input type="submit" value="Alterar">
+		</div>	
+		</form>
+	</div>
+</body>
+</html>

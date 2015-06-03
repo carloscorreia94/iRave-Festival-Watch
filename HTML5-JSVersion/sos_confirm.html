@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="code.js" type="text/javascript"></script> 
+<script type="text/javascript">
+    printDynamicItems();
+</script>
+<link rel="stylesheet" href="style.css">
+
+<title>Interfaces Pessoa Máquina - iRave</title>
+
+</head>
+
+<body>
+
+<div id="watch_screen">
+  <div id="status_bar">
+  	<div id="money">5€</div>
+  	<div id="clock">00:00</div>
+ </div>
+	<div id="container">
+		<div id="gO_confirm">Confirma?</div>
+		<a href="javascript:goToOpacity('#gO_confirm_yes','sos_calling.html')"><div id="gO_confirm_yes"></div></a>
+		<a href="javascript:goToOpacity('#gO_confirm_no','index.html')"><div id="gO_confirm_no"></div></a>
+	</div>
+</div>
+<div class="hard_btns">
+<a href="config.html"><div class="definitions_btn">
+	</div></a>
+	<a href="index.html"><div class="home_btn">
+	</div></a>
+	<a href="index.html"><div class="back_btn"></div></a>
+</div>
+<a href="help.html" id="side_btn_link"><div id="side_btn"></div></a>
+
+</body>
+</html>

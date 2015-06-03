@@ -1,0 +1,413 @@
+/* Estilo CSS */
+body
+{
+	background: url('assets/background.jpg') no-repeat;
+	background-size: auto
+}
+
+
+body#config
+{
+	background: url('assets/background-config.jpg') no-repeat;
+	background-size: auto
+}
+
+a:visited { 
+    color: black;
+}
+
+
+a {
+	color: black;
+}
+div#status_bar {
+
+	color: #fff;
+	height: 15px;
+	width: 101px;
+	border: 1px solid #000;
+	background-color: black;
+	font-family: "Arial";
+	font-size: 89%;
+
+}
+
+a {
+      text-decoration:none;
+   }
+
+div#config_screen {
+	font-family: Arial;
+	position: absolute;
+	left: 500px;
+	top: 214px;
+}
+
+h1 {
+	color:#000;
+}
+
+div#watch_screen {
+	position: absolute;
+	left: 903px;
+	top: 354px;
+	background-color: #fff;
+	width: 1.07in;
+	height: 1.06in;
+}
+
+div#watch_screen_2 {
+	position: absolute;
+	left: 903px;
+	top: 354px;
+	background-color: #fff;
+	background-image: url("assets/help/help4.png");
+	width: 1.07in;
+	height: 1.06in;
+}
+
+div#top_left {
+	position: relative;
+	top: 4px;
+	left: 7px;
+	width: 43.5px;
+	height: 43.5px;
+}
+
+div#top_right {
+	position: relative;
+	top: -39px;
+	left: 55px;
+	width: 43.5px;
+	height: 43.5px;
+}
+
+div#bottom_left {
+	position: relative;
+	top: -44px;
+	left: 8px;
+	width: 43.5px;
+	height: 43.5px;
+}
+
+div#bottom_right {
+	position: relative;
+	top: -88px;
+	left: 55px;
+
+	width: 43.5px;
+	height: 43.5px;
+}
+
+div#container {
+	display:none;
+	font-family: "Arial";
+	color: #000;
+	height: 85px;
+	width: 103px;
+	font-size: xx-small;
+
+}
+
+div#container_radar {
+	display:none;
+	height: 87px;
+	width: 103px;
+	background: #fff url('assets/pics/radar.gif') no-repeat;
+	background-position: center;
+}
+
+div#content_payments_do {
+	padding-top: 25px;
+	font-size: smaller;
+	text-align: center;
+}
+
+div#gO_payments {
+  width: 99px;
+  height: 28.5px;
+  text-align: center;
+  padding-top: 13px;
+  padding-left:6px;
+  line-height: 11px;
+  background-image: url('assets/main_btns/payment.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 90%;
+}
+
+div#gO_history {
+  width: 99px;
+  height: 28.5px;
+  text-align: center;
+  padding-top: 13px;
+  padding-left:6px;
+  line-height: 11px;
+  background-image: url('assets/main_btns/historic.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 90%;
+}
+
+div#gO_security {
+  width: 99px;
+  height: 28.5px;
+  text-align: center;
+  padding-top: 13px;
+  padding-left:6px;
+  line-height: 11px;
+  background-image: url('assets/main_btns/security.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 90%;
+}
+
+div#gO_paramedics {
+  width: 99px;
+  height: 28.5px;
+  text-align: center;
+  padding-top: 13px;
+  padding-left:6px;
+  line-height: 11px;
+  background-image: url('assets/main_btns/paramedics.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 90%;
+}
+
+div#gO_profile {
+  /* border: 2px solid #454444; */
+  width: 99px;
+  height: 33.5px;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 7px;
+ }
+
+div#gO_confirm {
+	border: 2px solid #454444;
+	width: 99px;
+	height: 26.5px;
+	text-align: center;
+	padding-top: 12px;
+	font-size:14px;
+	font-style:bold;
+}
+
+
+div#gO_confirm_yes {
+	border: 2px solid #454444;
+	width: 47.5px;
+	height: 26.5px;
+	text-align: center;
+	padding-top: 12px;
+	float:left;
+	background-image: url('assets/pics/confirm.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+div#gO_confirm_no {
+	float:right;
+	border: 2px solid #454444;
+	width: 47.5px;
+	height: 26.5px;
+	text-align: center;
+	padding-top: 12px;
+	background-image: url('assets/pics/error_sign.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+
+
+div#gO_medics {
+	border: 2px solid #454444;
+	width: 99px;
+	height: 34.5px;
+	text-align: center;
+	padding-top: 4px;
+}
+
+div#gO_color {
+	border: 2px solid #454444;
+	width: 99px;
+	height: 29.5px;
+	text-align: center;
+	padding-top: 9px;
+}
+
+div.gO_item {
+  width: 95px;
+  height: 14.5px;
+  text-align: center;
+  padding-top: 13px;
+  line-height: 4px;
+  background-image: url('assets/main_btns/main.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95px 27px;
+  font-size: 12px;
+  margin-left: 4px;
+  font-family:Arial;
+  color:#fff;
+}
+
+div.gO_item_color {
+  width: 95px;
+  height: 14.5px;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 0px;
+  background-image: url('assets/main_btns/main.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95px 27px;
+  font-size: 10px;
+  margin-left: 5px;
+  font-family: Arial;
+  color: #fff;
+}
+
+div#content_confirmation_pay {
+	padding-top: 5px;
+	text-align: center;
+}
+
+
+
+
+#check_sign {
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30px;
+  align-items: center;
+}
+
+.hard_btns {
+	position: absolute;
+	left: 903px;
+	top: 456px;
+	width: 32px;
+	height: 21px;
+	color: #fff;
+	padding-left: 70px;
+}
+.hard_btns .home_btn{
+	position: relative;
+	left: -28px;
+	top: -17px;
+	width: 21px;
+	height: 19px;
+	background-image: url('assets/btn/home_button.png');
+	background-repeat: no-repeat;
+
+}
+
+.hard_btns .definitions_btn {
+	position: relative;
+	left: -63px;
+	top: 1px;
+	width: 21px;
+	height: 20px;
+	background-image: url('assets/btn/gear_button.png');
+
+}
+.hard_btns .back_btn {
+  position: relative;
+  top: -41px;
+  left: 2px;
+  background-image: url('assets/btn/backB.png');
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 25px;
+}
+
+table#historyTable {
+  width: 100%;
+  /*height: 20px;*/
+  border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+span#price {
+	color:green;
+}
+
+span#insuf {
+	color:red;
+}
+
+div#lol {
+	text-align:left;
+}
+div#clock {
+float: right;
+}
+
+div#money {
+float: left;
+}
+
+.call_screen {
+  padding-left: 19px;
+  padding-top: 3px;
+}
+
+.call_screen .calling {
+  width: 65px;
+}
+
+.call_screen .contact {
+  line-height: 1px;
+  color: red;
+}
+
+span#radar_point {
+	font-family: Arial;
+	color: red;
+	font-size:15px;
+}
+
+#point_position {
+	padding-top:10px;
+	padding-left:10px;
+}
+
+div#config_right {
+	float:right;
+}
+
+div#config_left {
+	float:left;
+}
+
+.start_config {
+	border: none;
+	border-collapse:collapse;
+}
+
+.start_config td {
+	padding-bottom: 10px;
+	padding-left: 5px;
+	border: none;
+}
+
+#foo {
+	padding-top:30px;
+	padding-left:50px;
+}
+
+div#side_btn {
+  width: 7px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  left: 1013px;
+  top: 361px;
+}

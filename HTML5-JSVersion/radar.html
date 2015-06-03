@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="code.js" type="text/javascript"></script> 
+<script type="text/javascript">
+    printDynamicItems('radar_init');
+</script>
+<link rel="stylesheet" href="style.css">
+
+<title>Interfaces Pessoa Máquina - iRave</title>
+
+</head>
+
+<body>
+
+<div id="watch_screen">
+  <div id="status_bar">
+  	<div id="money">5€</div>
+  	<div id="clock">00:00</div>
+ </div>
+	<div id="container">
+		<a href="config.html"><div class="gO_item_none" id="no_items" style="display:none">Não tem items. Configure aqui, através de um terminal.</div></a>
+		<a href="javascript:goToOpacity('.gO_item','radar_search.html')"><div class="gO_item" id="item1"><span id="item1">Item #1</span></div></a>
+		<a href="javascript:goToOpacity('.gO_item','radar_search.html')"><div class="gO_item" id="item2"><span id="item2">Item #2</span></div></a>
+		<a href="javascript:goToOpacity('.gO_item','radar_search.html')"><div class="gO_item" id="item3"><span id="item3">Item #3</span></div></a>
+	</div>
+</div>
+<div class="hard_btns">
+<a href="config.html"><div class="definitions_btn">
+	</div></a>
+	<a href="index.html"><div class="home_btn">
+	</div></a>
+	<a href="index.html"><div class="back_btn"></div></a>
+</div>
+<a href="help.html" id="side_btn_link"><div id="side_btn"></div></a>
+
+</body>
+</html>

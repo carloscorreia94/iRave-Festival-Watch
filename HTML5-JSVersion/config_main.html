@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="code.js" type="text/javascript"></script> 
+<script type="text/javascript">
+    printDynamicItems('config');
+</script>
+<link rel="stylesheet" href="style.css">
+
+<title>Interfaces Pessoa Máquina - iRave</title>
+
+</head>
+
+<body id="config">
+	<div id="config_screen">
+		<h1>Configure o seu iRave neste Terminal</h1>
+		<hr/>
+
+		<h2>Pagamentos</h2>
+		Saldo Actual: <b><span id="saldo_actual"></span></b>
+		<form name="config_form" action="index.html" onsubmit="return saldoForm()">Carregar com: <input type="text" name="money" maxlength="4" size="4"> € <input type="submit" value="Carregar">
+		</form> 
+
+		<h2>Radar</h2>
+		(Nomes atribuidos aos objectos)
+		<form name="radar_form" action="radar.html" onsubmit="return radarForm()">
+			<ul>
+			<li><p><b>Item #1</b>&nbsp;&nbsp;<input type="text" name="item1" id="item1"></p></li>
+			<li><p><b>Item #2</b>&nbsp;&nbsp;<input type="text" name="item2" id="item2"></p></li>
+			<li><p><b>Item #3</b>&nbsp;&nbsp;<input type="text" name="item3" id="item3"></p></li>
+			</ul>
+			<input type="submit" value="Alterar">
+		</form>
+		<form name="fav_form" action="index.html" onsubmit="return favForm()">
+		<h2>Funcionalidade Favorita</h2> 
+		<select name="type" id="type">
+  						<option value="1" selected>Ajuda</option>
+						<option value="2">Pagamentos</option>
+						<option value="3">Perfil</option>
+						<option value="4">Radar</option>
+						<option value="5">S.O.S</option>
+					</select> <input type="submit" value="Alterar">
+	    </form>
+	</div>
+</body>
+</html>
