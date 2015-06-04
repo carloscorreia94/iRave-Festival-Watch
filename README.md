@@ -3,10 +3,10 @@
 
 Project structure consists in a server-side approach, using SQL database for persistent data manipulation.
 
-Is incompleted and was discontinued because the Course Rules only alowed me to use HTML+JS.
+Is incomplete and was discontinued because the Course Rules only alowed me to use HTML+JS.
 
 
-**HTML5-JS Version**
+**HTML5-JS Version (FINAL)**
 
 Up at 02/05/15
 
